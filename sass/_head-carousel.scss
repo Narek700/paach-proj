@@ -1,0 +1,139 @@
+.page-head {
+  min-height: 100%;
+
+  .container {
+    max-width: 1205px;
+  }
+
+  .carousel {
+    min-height: 100vh;
+
+    .slick-list {
+      min-height: 100vh;
+      padding: 0 !important;
+
+      .slick-track {
+        min-height: 100vh;
+
+        .slick-slide {
+          position: relative;
+          min-height: 100vh;
+          background-color: rgba(0, 0, 0, .3);
+
+          .img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            z-index: -9;
+          }
+        }
+      }
+    }
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border: 0;
+  height: 35px;
+  margin: auto;
+  z-index: 99;
+  background-color: transparent;
+
+  &.btn-next {
+    right: 60px;
+    color: #EBEBEB;
+    font-size: 35px;
+    opacity: .7;
+  }
+
+  &.btn-prev {
+    left: 60px;
+    color: #EBEBEB;
+    font-size: 35px;
+    opacity: .7;
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  left: 0;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  gap: 5px;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+
+  li {
+    width: 10px;
+    height: 10px;
+    transition: .3s;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .8);
+
+    &.slick-active {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1299px) {
+  .slick-arrow {
+    &.btn-prev {
+      left: 30px;
+    }
+
+    &.btn-next {
+      right: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .page-head {
+    min-height: auto;
+
+    .carousel {
+      min-height: 400px;
+
+      .slick-list {
+        min-height: 400px;
+
+        .slick-track {
+          min-height: 400px;
+
+          .slick-slide {
+            min-height: 400px;
+
+            .img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
