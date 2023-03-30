@@ -3,20 +3,19 @@
 html, body {
   height: 100%;
   font-size: 16px;
+  color: $primary;
+  background-color: $white;
+  font-family: Helvetica, sans-serif;
   font-weight: normal;
-  color: $primary-color;
-  background-color: $default-bg;
 }
 
 a {
-  color: $white !important;
   text-decoration: none;
   transition: .3s;
 
   &:hover {
     opacity: .8;
-    color: $white !important;
-    text-decoration: none !important;
+    text-decoration: none;
   }
 }
 

@@ -1,150 +1,35 @@
-// Start Noto Sans Armenian
 @font-face {
-  font-family: 'Noto Sans Armenian';
-  src: url('../fonts/NotoSansArmenian/NotoSansArmenian-Black.eot');
-  src: url('../fonts/NotoSansArmenian/NotoSansArmenian-Black.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/NotoSansArmenian/NotoSansArmenian-Black.woff2') format('woff2'),
-  url('../fonts/NotoSansArmenian/NotoSansArmenian-Black.woff') format('woff'),
-  url('../fonts/NotoSansArmenian/NotoSansArmenian-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Sans Armenian';
-  src: url('../fonts/NotoSansArmenian/NotoSansArmenian-ExtraBold.eot');
-  src: url('../fonts/NotoSansArmenian/NotoSansArmenian-ExtraBold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/NotoSansArmenian/NotoSansArmenian-ExtraBold.woff2') format('woff2'),
-  url('../fonts/NotoSansArmenian/NotoSansArmenian-ExtraBold.woff') format('woff'),
-  url('../fonts/NotoSansArmenian/NotoSansArmenian-ExtraBold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Sans Armenian';
-  src: url('../fonts/NotoSansArmenian/NotoSansArmenian-SemiBold.eot');
-  src: url('../fonts/NotoSansArmenian/NotoSansArmenian-SemiBold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/NotoSansArmenian/NotoSansArmenian-SemiBold.woff2') format('woff2'),
-  url('../fonts/NotoSansArmenian/NotoSansArmenian-SemiBold.woff') format('woff'),
-  url('../fonts/NotoSansArmenian/NotoSansArmenian-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Sans Armenian';
-  src: url('../fonts/NotoSansArmenian/NotoSansArmenian-Medium.eot');
-  src: url('../fonts/NotoSansArmenian/NotoSansArmenian-Medium.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/NotoSansArmenian/NotoSansArmenian-Medium.woff2') format('woff2'),
-  url('../fonts/NotoSansArmenian/NotoSansArmenian-Medium.woff') format('woff'),
-  url('../fonts/NotoSansArmenian/NotoSansArmenian-Medium.ttf') format('truetype');
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Medium.eot');
+  src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PlayfairDisplay/PlayfairDisplay-Medium.woff2') format('woff2'),
+  url('../fonts/PlayfairDisplay/PlayfairDisplay-Medium.woff') format('woff'),
+  url('../fonts/PlayfairDisplay/PlayfairDisplay-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Noto Sans Armenian';
-  src: url('../fonts/NotoSansArmenian/NotoSansArmenian-Bold.eot');
-  src: url('../fonts/NotoSansArmenian/NotoSansArmenian-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/NotoSansArmenian/NotoSansArmenian-Bold.woff2') format('woff2'),
-  url('../fonts/NotoSansArmenian/NotoSansArmenian-Bold.woff') format('woff'),
-  url('../fonts/NotoSansArmenian/NotoSansArmenian-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Sans Armenian';
-  src: url('../fonts/NotoSansArmenian/NotoSansArmenian-Regular.eot');
-  src: url('../fonts/NotoSansArmenian/NotoSansArmenian-Regular.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/NotoSansArmenian/NotoSansArmenian-Regular.woff2') format('woff2'),
-  url('../fonts/NotoSansArmenian/NotoSansArmenian-Regular.woff') format('woff'),
-  url('../fonts/NotoSansArmenian/NotoSansArmenian-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-// End Noto Sans Armenian
-
-
-
-//Start Open Sans
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/OpenSans/OpenSans-SemiBold.eot');
-  src: url('../fonts/OpenSans/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/OpenSans/OpenSans-SemiBold.woff2') format('woff2'),
-  url('../fonts/OpenSans/OpenSans-SemiBold.woff') format('woff'),
-  url('../fonts/OpenSans/OpenSans-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/OpenSans/OpenSans-Light.eot');
-  src: url('../fonts/OpenSans/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/OpenSans/OpenSans-Light.woff2') format('woff2'),
-  url('../fonts/OpenSans/OpenSans-Light.woff') format('woff'),
-  url('../fonts/OpenSans/OpenSans-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/OpenSans/OpenSans-Regular.eot');
-  src: url('../fonts/OpenSans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/OpenSans/OpenSans-Regular.woff2') format('woff2'),
-  url('../fonts/OpenSans/OpenSans-Regular.woff') format('woff'),
-  url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.eot');
+  src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff2') format('woff2'),
+  url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff') format('woff'),
+  url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/OpenSans/OpenSans-Bold.eot');
-  src: url('../fonts/OpenSans/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/OpenSans/OpenSans-Bold.woff2') format('woff2'),
-  url('../fonts/OpenSans/OpenSans-Bold.woff') format('woff'),
-  url('../fonts/OpenSans/OpenSans-Bold.ttf') format('truetype');
-  font-weight: bold;
+  font-family: 'Helvetica';
+  src: url('../fonts/Helvetica/Helvetica.eot');
+  src: url('../fonts/Helvetica/Helvetica.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Helvetica/Helvetica.woff2') format('woff2'),
+  url('../fonts/Helvetica/Helvetica.woff') format('woff'),
+  url('../fonts/Helvetica/Helvetica.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/OpenSans/OpenSans-Medium.eot');
-  src: url('../fonts/OpenSans/OpenSans-Medium.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/OpenSans/OpenSans-Medium.woff2') format('woff2'),
-  url('../fonts/OpenSans/OpenSans-Medium.woff') format('woff'),
-  url('../fonts/OpenSans/OpenSans-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/OpenSans/OpenSans-ExtraBold.eot');
-  src: url('../fonts/OpenSans/OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/OpenSans/OpenSans-ExtraBold.woff2') format('woff2'),
-  url('../fonts/OpenSans/OpenSans-ExtraBold.woff') format('woff'),
-  url('../fonts/OpenSans/OpenSans-ExtraBold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-// End Open Sans

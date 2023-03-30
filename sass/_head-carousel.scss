@@ -1,3 +1,5 @@
+@import "variables";
+
 .page-head {
   min-height: 100%;
 
@@ -66,22 +68,36 @@
   margin: auto;
   padding: 0;
   display: flex;
-  gap: 5px;
   list-style: none;
   align-items: center;
   justify-content: center;
 
   li {
-    width: 10px;
-    height: 10px;
+    width: 4px;
+    height: 4px;
     transition: .3s;
     cursor: pointer;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, .8);
+    position: relative;
+    background-color: rgba(249, 249, 251, 0.64);
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
 
     &.slick-active {
-      width: 14px;
-      height: 14px;
+      background-color: $white;
+
+      &:after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border: 1px solid $white;
+        position: absolute;
+        left: -3px;
+        top: -3px;
+        border-radius: 50%;
+      }
     }
   }
 
