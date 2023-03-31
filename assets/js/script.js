@@ -36,31 +36,36 @@ $(document).ready(function () {
     function collapseMenu(e) {
         e.preventDefault();
         e.stopPropagation();
-        let parentEl = e.target.parentNode;
+        if (window.innerWidth < 992) {
+            let parentEl = e.target.parentNode;
 
-        if (parentEl.nodeName === 'A' || parentEl.nodeName === 'a') {
-            parentEl = parentEl.parentNode;
+            if (parentEl.nodeName === 'A' || parentEl.nodeName === 'a') {
+                parentEl = parentEl.parentNode;
+            }
+
+            if (parentEl.nodeName === 'DIV' || parentEl.nodeName === 'DIV') {
+                parentEl = parentEl.parentNode.parentNode.parentNode;
+            }
+
+            parentEl.querySelector('.collapseLinks').classList.toggle('active');
         }
-
-        if (parentEl.nodeName === 'DIV' || parentEl.nodeName === 'DIV') {
-            parentEl = parentEl.parentNode.parentNode.parentNode;
-        }
-
-        parentEl.querySelector('.collapseLinks').classList.toggle('active')
     }
 
     $('.collapseBtn2').on('click', collapseSubMenu);
     $('.collapseBtn2 img').on('click', collapseSubMenu);
 
     function collapseSubMenu(e) {
-        e.target.closest('.collapseBtn2').classList.toggle('active');
-        e.target.closest('.lists').classList.toggle('active');
-        if (e.target.closest('.academy')) {
-            e.target.closest('.academy').classList.toggle('activeLink');
-            e.target.closest('li').classList.toggle('activeSubLink');
-        } else if (e.target.closest('.structure')) {
-            e.target.closest('.academy').classList.toggle('structure');
-            e.target.closest('li').classList.toggle('activeSubLink');
+        if (window.innerWidth < 992) {
+
+            e.target.closest('.collapseBtn2').classList.toggle('active');
+            e.target.closest('.lists').classList.toggle('active');
+            if (e.target.closest('.academy')) {
+                e.target.closest('.academy').classList.toggle('activeLink');
+                e.target.closest('li').classList.toggle('activeSubLink');
+            } else if (e.target.closest('.structure')) {
+                e.target.closest('.academy').classList.toggle('structure');
+                e.target.closest('li').classList.toggle('activeSubLink');
+            }
         }
     }
 });

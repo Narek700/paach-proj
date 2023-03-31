@@ -205,26 +205,6 @@
         }
       }
     }
-
-    .lists {
-      &.active {
-        & > li:not(.activeLink) {
-          display: none;
-        }
-
-        .activeLink {
-          & > .collapseBtn {
-            display: none;
-          }
-
-          & > .collapseLinks.active {
-            & > li:not(.activeSubLink) {
-              display: none;
-            }
-          }
-        }
-      }
-    }
   }
 }
 
@@ -458,6 +438,26 @@
 
             img {
               transform: rotate(180deg);
+            }
+          }
+        }
+      }
+
+      .lists {
+        &.active {
+          & > li:not(.activeLink) {
+            display: none;
+          }
+
+          .activeLink {
+            & > .collapseBtn {
+              display: none;
+            }
+
+            & > .collapseLinks.active {
+              & > li:not(.activeSubLink) {
+                display: none;
+              }
             }
           }
         }
