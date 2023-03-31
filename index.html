@@ -24,9 +24,9 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="/assets/css/slick.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css"/>
 </head>
 <body>
 
@@ -42,72 +42,183 @@
         <button class="search">
             <img src="assets/img/search.svg" alt="search">
         </button>
+        <div class="auth d-flex d-lg-none">
+            <a href="#">
+                <img src="assets/img/basket.svg" alt="basket">
+            </a>
+            <a href="#">
+                <img src="assets/img/auth.svg" alt="auth">
+            </a>
+        </div>
         <button id="btnMenu" class="btn-menu d-lg-none">
             <span></span>
             <span></span>
             <span></span>
         </button>
         <nav id="nav">
-            <ul>
-                <li>
-                    <a href="#">
+            <ul class="lists">
+                <li class="academy">
+                    <a href="javascript:void(0)" class="collapseBtn">
                         Академия
                         <img src="assets/img/arrow.svg" class="arrow d-none d-lg-inline-block" alt="arrow">
                         <img src="assets/img/arrow-black.svg" class="d-lg-none d-inline-block" alt="arrow">
                     </a>
                     <!-- First Tier Drop Down -->
-                    <ul>
-                        <li><a href="#">Деятельноость</a></li>
-                        <li><a href="#">Государственное задание</a></li>
+                    <ul class="collapseLinks">
+                        <li>
+                            <a href="#">
+                                Деятельноость
+                                <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block" alt="arrow">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Государственное задание
+                                <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block" alt="arrow">
+                            </a>
+                        </li>
 
                         <li>
-                            <a href="#">Научные исследования и проектные разработки</a>
+                            <a href="javascript:void(0)" class="collapseBtn collapseBtn2">
+                                <div class="collapseBreadcrumb">
+                                    <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block"
+                                         alt="arrow">
+                                    Академия
+                                </div>
+                                <div class="d-flex w-100 justify-content-between">
+                                    Научные исследования и проектные разработки
+                                    <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block arrowMobile"
+                                         alt="arrow">
+                                </div>
+                            </a>
                             <!-- Second Tier Drop Down -->
-                            <ul>
+                            <ul class="collapseLinks">
                                 <li>
                                     <a href="#">
                                         Приоритетные направления развития фундаментальных научных
                                         исследований
+                                        <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block"
+                                             alt="arrow">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         Приоритетные направления развития прикладных наук и поисковых
                                         исследований
+                                        <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block"
+                                             alt="arrow">
                                     </a>
                                 </li>
-                                <li><a href="#">Стратегия научно-технологического развития Российской Федерации</a></li>
-                                <li><a href="#">Национальные проекты</a></li>
-                                <li><a href="#">Государственные программы Российской Федерации</a></li>
-                                <li><a href="#">Программы фундаментальных научных исследований</a></li>
-                                <li><a href="#">Прочие аналитические и иные материалы</a></li>
-                                <li><a href="#">Методические материалы</a></li>
-                                <li><a href="#">Эффективность деятельности научных организаций</a></li>
+                                <li>
+                                    <a href="#">
+                                        Стратегия научно-технологического развития Российской Федерации
+                                        <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block"
+                                             alt="arrow">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Национальные проекты
+                                        <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block"
+                                             alt="arrow">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Государственные программы Российской Федерации
+                                        <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block"
+                                             alt="arrow">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Программы фундаментальных научных исследований
+                                        <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block"
+                                             alt="arrow">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Прочие аналитические и иные материалы
+                                        <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block"
+                                             alt="arrow">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Методические материалы
+                                        <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block"
+                                             alt="arrow">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Эффективность деятельности научных организаций
+                                        <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block"
+                                             alt="arrow">
+                                    </a>
+                                </li>
                             </ul>
                         </li>
-                        <li><a href="#">Инновации РААСН</a></li>
-                        <li><a href="#">Экспертное научное обеспечение</a></li>
-                        <li><a href="#">Издания РААСН</a></li>
+                        <li>
+                            <a href="#">
+                                Инновации РААСН
+                                <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block" alt="arrow">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Экспертное научное обеспечение
+                                <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block" alt="arrow">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Издания РААСН
+                                <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block" alt="arrow">
+                            </a>
+                        </li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#">
+                <li class="structure">
+                    <a href="javascript:void(0)" class="collapseBtn">
                         Структура
                         <img src="assets/img/arrow.svg" class="arrow d-none d-lg-inline-block" alt="arrow">
                         <img src="assets/img/arrow-black.svg" class="d-lg-none d-inline-block" alt="arrow">
                     </a>
-                    <ul>
-                        <li><a href="#">Структура</a></li>
-                        <li><a href="#">Структура</a></li>
-                        <li><a href="#">Структура</a></li>
-                        <li><a href="#">Структура</a></li>
+                    <ul class="collapseLinks">
+                        <li>
+                            <a href="#">
+                                Структура
+                                <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block" alt="arrow">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Структура
+                                <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block" alt="arrow">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Структура
+                                <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block" alt="arrow">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Структура
+                                <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block" alt="arrow">
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li>
                     <a href="#">
                         Новости
                         <img src="assets/img/arrow-black.svg" class="d-lg-none d-inline-block" alt="arrow">
-                    </a></li>
+                    </a>
+                </li>
                 <li>
                     <a href="#">
                         Архив
@@ -120,8 +231,12 @@
                         <img src="assets/img/arrow-black.svg" class="d-lg-none d-inline-block" alt="arrow">
                     </a>
                 </li>
-                <li><a href="#">Корзина</a></li>
-                <li><a href="#">Вход</a></li>
+                <li class="d-none d-lg-inline-block">
+                    <div class="auth">
+                        <a href="#">Корзина</a>
+                        <a href="#">Вход</a>
+                    </div>
+                </li>
             </ul>
         </nav>
     </div>
@@ -144,8 +259,8 @@
     </div>
 </main>
 
-<script src="assets/js/jquery-3.6.0.min.js"></script>
-<script src="assets/js/slick.min.js"></script>
+<script src="/assets/js/jquery-3.6.0.min.js"></script>
+<script src="/assets/js/slick.min.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
 </html>
