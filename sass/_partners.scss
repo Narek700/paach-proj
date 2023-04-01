@@ -1,0 +1,19 @@
+.partners {
+  border-top: 2px solid #EEEDF2;
+  padding: 20px 65px;
+
+  img {
+    min-width: 88px;
+    width: 7.9vw;
+  }
+
+  .slick-slide {
+    margin-right: 30px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .partners {
+    padding: 20px 16px;
+  }
+}

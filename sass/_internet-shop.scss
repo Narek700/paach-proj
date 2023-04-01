@@ -29,6 +29,13 @@
 
       img {
         margin-left: 2px;
+        transition: .3s;
+      }
+
+      &:hover {
+        img {
+          transform: translate(3px);
+        }
       }
     }
   }
