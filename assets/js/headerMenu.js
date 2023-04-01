@@ -51,9 +51,14 @@ if (window.innerWidth < 992) {
 $(window).resize(function () {
     if (window.innerWidth < 992) {
         $("#header").addClass("active");
+        if ($('#nav').hasClass('active')) {
+            $('body').addClass('overflow-hidden');
+        }
     } else {
         $('.collapseLinks').removeClass('active');
         $('body').removeClass('overflow-hidden');
+        $('#nav').removeClass('overflow-hidden');
+        $('#btnMenu').removeClass('overflow-hidden');
 
         if ($(window).scrollTop() < 150) {
             $("#header").removeClass("active");

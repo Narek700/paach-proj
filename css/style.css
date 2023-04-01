@@ -657,3 +657,39 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555555; } }
+
+.footer {
+  padding: 12px 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0E0E1B; }
+  .footer .copyright {
+    font-size: 12px;
+    color: #F9F9FB;
+    line-height: 16px;
+    letter-spacing: 0.6px;
+    max-width: 525px;
+    width: 100%;
+    margin-right: 15px; }
+  .footer .social-media {
+    display: flex; }
+    .footer .social-media a:not(:last-child) {
+      margin-right: 16px; }
+
+@media only screen and (max-width: 991px) {
+  .footer {
+    padding: 24px 16px 32px; } }
+
+@media only screen and (max-width: 575px) {
+  .footer {
+    flex-direction: column; }
+    .footer .copyright {
+      font-size: 10px;
+      line-height: 14px;
+      letter-spacing: 0.8px;
+      margin-right: 0;
+      order: 1; }
+    .footer .social-media {
+      order: 0;
+      margin-bottom: 14px; } }
