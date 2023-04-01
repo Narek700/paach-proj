@@ -2,7 +2,7 @@
   "name": "intern",
   "version": "1.0.0",
   "description": "intern landing page",
-  "main": "assets/js/script.js",
+  "main": "assets/js/homepage-carousel.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
