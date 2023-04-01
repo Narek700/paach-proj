@@ -1,0 +1,74 @@
+@import "variables";
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+
+  @for $i from 1 through 6 {
+    .link-#{$i} {
+      background-image: url(../assets/img/img#{$i}.jpg);
+    }
+  }
+
+  .link {
+    height: 360px;
+    width: calc(100% / 3);
+    color: $content-white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 56px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:hover {
+      padding: 50px 60px;
+    }
+
+    .num {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.4px;
+      padding-top: 16px;
+      border-top: 1px solid $content-white;
+    }
+
+    .title {
+      font-family: 'Playfair Display', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 40px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .features .link {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .features .link {
+    padding: 32px 16px;
+    height: 240px;
+
+    &:hover {
+      padding: 28px 12px;
+    }
+
+    .num {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.6px;
+    }
+
+    .title {
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: 0.8px;
+    }
+  }
+}

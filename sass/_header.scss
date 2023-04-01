@@ -38,7 +38,7 @@
         font-size: 12px;
         line-height: 16px;
         letter-spacing: 0.6px;
-        color: rgba(249, 249, 251, 0.64);
+        color: $content-white;
       }
     }
   }
@@ -172,7 +172,7 @@
             }
 
             a {
-              color: rgba(249, 249, 251, 0.64) !important;
+              color: $content-white !important;
               text-align: left;
               font-size: 12px;
               line-height: 16px;

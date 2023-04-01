@@ -323,6 +323,66 @@
   .header nav a {
     white-space: inherit; } }
 
+.features {
+  display: flex;
+  flex-wrap: wrap; }
+  .features .link-1 {
+    background-image: url(../assets/img/img1.jpg); }
+  .features .link-2 {
+    background-image: url(../assets/img/img2.jpg); }
+  .features .link-3 {
+    background-image: url(../assets/img/img3.jpg); }
+  .features .link-4 {
+    background-image: url(../assets/img/img4.jpg); }
+  .features .link-5 {
+    background-image: url(../assets/img/img5.jpg); }
+  .features .link-6 {
+    background-image: url(../assets/img/img6.jpg); }
+  .features .link {
+    height: 360px;
+    width: calc(100% / 3);
+    color: rgba(249, 249, 251, 0.64);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 56px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .features .link:hover {
+      padding: 50px 60px; }
+    .features .link .num {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.4px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(249, 249, 251, 0.64); }
+    .features .link .title {
+      font-family: 'Playfair Display', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 40px;
+      letter-spacing: 1px; }
+
+@media only screen and (max-width: 991px) {
+  .features .link {
+    width: 50%; } }
+
+@media only screen and (max-width: 767px) {
+  .features .link {
+    padding: 32px 16px;
+    height: 240px; }
+    .features .link:hover {
+      padding: 28px 12px; }
+    .features .link .num {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.6px; }
+    .features .link .title {
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: 0.8px; } }
+
 .page-head {
   min-height: 100%; }
   .page-head .container {

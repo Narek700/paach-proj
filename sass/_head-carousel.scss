@@ -79,7 +79,7 @@
     cursor: pointer;
     border-radius: 50%;
     position: relative;
-    background-color: rgba(249, 249, 251, 0.64);
+    background-color: $content-white;
 
     &:not(:last-child) {
       margin-right: 24px;
