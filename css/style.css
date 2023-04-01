@@ -23,7 +23,7 @@
   font-display: swap; }
 
 .header {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 999;
@@ -31,8 +31,8 @@
   padding: 0 64px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: rgba(14, 14, 27, 0.8); }
+  transition: .3s;
+  justify-content: space-between; }
   .header .logo {
     display: flex;
     color: #F9F9FB;
@@ -95,6 +95,8 @@
         width: 100%;
         text-align: center; }
       @media only screen and (min-width: 992px) {
+        .header nav ul li:hover .collapseBtn {
+          background-color: rgba(14, 14, 27, 0.8); }
         .header nav ul li:hover .arrow {
           transform: rotate(-180deg); }
         .header nav ul li:hover > ul {
@@ -148,12 +150,15 @@
       line-height: 106px; }
     .header nav > ul > li > ul {
       background-color: rgba(14, 14, 27, 0.8); }
-  .header nav .lists.active > li:not(.activeLink) {
-    display: none; }
-  .header nav .lists.active .activeLink > .collapseBtn {
-    display: none; }
-  .header nav .lists.active .activeLink > .collapseLinks.active > li:not(.activeSubLink) {
-    display: none; }
+  .header.active {
+    background-color: rgba(14, 14, 27, 0.8); }
+    .header.active nav > ul > li > ul {
+      background-color: rgba(14, 14, 27, 0.8); }
+    .header.active nav ul li ul li ul li {
+      background-color: rgba(14, 14, 27, 0.8); }
+    @media only screen and (min-width: 992px) {
+      .header.active nav ul > li:hover .collapseBtn {
+        background-color: transparent; } }
 
 @media only screen and (max-width: 1198px) {
   .header {
@@ -295,7 +300,15 @@
           color: #7B7B8C;
           margin-bottom: 6px; }
           .header nav .collapseBtn2.active .collapseBreadcrumb img {
-            transform: rotate(180deg); } }
+            transform: rotate(180deg); }
+      .header nav .lists.active > li:not(.activeLink) {
+        display: none; }
+      .header nav .lists.active .activeLink > .collapseBtn {
+        display: none; }
+      .header nav .lists.active .activeLink > .collapseLinks.active > li:not(.activeSubLink) {
+        display: none; }
+  .header.active nav ul li ul li ul li {
+    background-color: transparent; } }
 
 @media only screen and (max-width: 767px) {
   .header .logo .logo-name {
@@ -364,8 +377,8 @@
   align-items: center;
   justify-content: center; }
   .slick-dots li {
-    width: 4px;
-    height: 4px;
+    width: 7px;
+    height: 7px;
     transition: .3s;
     cursor: pointer;
     border-radius: 50%;
@@ -377,12 +390,12 @@
       background-color: #F9F9FB; }
       .slick-dots li.slick-active:after {
         content: '';
-        width: 10px;
-        height: 10px;
+        width: 15px;
+        height: 15px;
         border: 1px solid #F9F9FB;
         position: absolute;
-        left: -3px;
-        top: -3px;
+        left: -4px;
+        top: -4px;
         border-radius: 50%; }
   .slick-dots button {
     display: none; }
@@ -394,23 +407,8 @@
     right: 30px; } }
 
 @media only screen and (max-width: 767px) {
-  .container {
-    padding-left: 24px;
-    padding-right: 24px; }
-  .page-head {
-    min-height: auto; }
-    .page-head .carousel {
-      min-height: 400px; }
-      .page-head .carousel .slick-list {
-        min-height: 400px; }
-        .page-head .carousel .slick-list .slick-track {
-          min-height: 400px; }
-          .page-head .carousel .slick-list .slick-track .slick-slide {
-            min-height: 400px; }
-            .page-head .carousel .slick-list .slick-track .slick-slide .img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover; } }
+  .page-head .carousel .slick-list .slick-track .slick-slide .img {
+    object-position: 75%; } }
 
 html, body {
   height: 100%;

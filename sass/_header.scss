@@ -1,7 +1,7 @@
 @import "variables";
 
 .header {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 999;
@@ -9,8 +9,8 @@
   padding: 0 64px;
   display: flex;
   align-items: center;
+  transition: .3s;
   justify-content: space-between;
-  background-color: $header-bg;
 
   .logo {
     display: flex;
@@ -98,7 +98,6 @@
         transition: .3s;
         position: relative;
         display: inline-block;
-
         /* Change this in order to change the Dropdown symbol */
         & > a {
           display: block;
@@ -109,6 +108,10 @@
         /* Display Dropdowns on Hover */
         @media only screen and (min-width: 992px) {
           &:hover {
+            .collapseBtn {
+              background-color: $header-bg;
+            }
+
             .arrow {
               transform: rotate(-180deg);
             }
@@ -205,6 +208,27 @@
         }
       }
     }
+  }
+
+  &.active {
+    background-color: $header-bg;
+
+    nav > ul > li > ul {
+      background-color: $header-bg;
+    }
+
+    nav ul li ul li ul li {
+      background-color: $header-bg;
+    }
+
+    @media only screen and (min-width: 992px) {
+      nav ul > li:hover {
+        .collapseBtn {
+          background-color: transparent;
+        }
+      }
+    }
+
   }
 }
 
@@ -464,6 +488,9 @@
       }
     }
 
+  }
+  .header.active nav ul li ul li ul li {
+    background-color: transparent;
   }
 }
 
