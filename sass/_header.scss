@@ -111,7 +111,6 @@
             .collapseBtn {
               background-color: $header-bg;
             }
-
             .arrow {
               transform: rotate(-180deg);
             }
@@ -221,7 +220,7 @@
       background-color: $header-bg;
     }
 
-    @media only screen and (min-width: 992px) {
+    @media only screen and (min-width: 992px){
       nav ul > li:hover {
         .collapseBtn {
           background-color: transparent;
