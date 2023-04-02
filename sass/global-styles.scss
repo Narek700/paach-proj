@@ -9,12 +9,12 @@ html, body {
   font-weight: normal;
 }
 
-a {
+a, button {
   text-decoration: none;
   transition: .3s;
 
   &:hover {
-    opacity: .8;
+    opacity: .7;
     text-decoration: none;
   }
 }
