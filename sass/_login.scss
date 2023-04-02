@@ -19,6 +19,28 @@
 
   .content {
     padding: 0 16px;
+
+    .confirm {
+      width: 100%;
+      max-width: 560px;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      margin: 56px auto 0;
+
+      .go-home {
+        text-align: center;
+
+        a {
+          color: #7B7B8C;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 0.4px;
+          padding-bottom: 4px;
+          border-bottom: 1px dashed #7B7B8C;;
+        }
+      }
+    }
   }
 
   .form {
@@ -71,7 +93,7 @@
         line-height: 16px;
         letter-spacing: 0.6px;
         padding-bottom: 4px;
-        border-bottom: 1px dashed #7B7B8C;;
+        border-bottom: 1px dashed #7B7B8C;
       }
     }
 
@@ -95,7 +117,7 @@
         line-height: 20px;
         letter-spacing: 0.4px;
         color: #7B7B8C;
-        border-bottom: 1px dashed #7B7B8C;;
+        border-bottom: 1px dashed #7B7B8C;
       }
     }
   }
@@ -111,6 +133,13 @@
 @media only screen and (max-width: 767px) {
   .login {
     min-height: 600px;
+
+    .content .confirm {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.4px;
+      margin-top: 32px;
+    }
 
     .head-title {
       font-size: 30px;

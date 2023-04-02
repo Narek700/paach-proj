@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PAACH login</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<header class="header active-other-pages" id="header">
+    <a href="" class="logo">
+        <img src="assets/img/logo.svg" alt="logo">
+        <div class="logo-name">
+            <div class="short-name">РААСН</div>
+            <div class="name">Российская академия архитектуры и строительных наук</div>
+        </div>
+    </a>
+    <div class="middle-menu">
+        <button class="search">
+            <img src="assets/img/search.svg" alt="search">
+        </button>
+        <div class="auth d-flex d-lg-none">
+            <a href="#">
+                <img src="assets/img/basket.svg" alt="basket">
+            </a>
+            <a href="#">
+                <img src="assets/img/auth.svg" alt="auth">
+            </a>
+        </div>
+        <button id="btnMenu" class="btn-menu d-lg-none">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="nav">
+            <ul class="lists">
+                <li class="academy">
+                    <a href="javascript:void(0)" class="collapseBtn">
+                        Академия
+                        <img src="assets/img/arrow.svg" class="arrow d-none d-lg-inline-block" alt="arrow">
+                        <img src="assets/img/arrow-black.svg" class="d-lg-none d-inline-block" alt="arrow">
+                    </a>
+                    <!-- First Tier Drop Down -->
+                    <ul class="collapseLinks">
+                        <li>
+                            <a href="#">
+                                Деятельноость
+                                <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block" alt="arrow">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Государственное задание
+                                <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block" alt="arrow">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)" class="collapseBtn collapseBtn2">
+                                <div class="collapseBreadcrumb">
+                                    <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block"
+                                         alt="arrow">
+                                    Академия
+                                </div>
+                                <div class="d-flex w-100 justify-content-between">
+                                    Научные исследования и проектные разработки
+                                    <img src="assets/img/smallGrayArrow.svg"
+                                         class="d-lg-none d-inline-block arrowMobile"
+                                         alt="arrow">
+                                </div>
+                            </a>
+                            <!-- Second Tier Drop Down -->
+                            <ul class="collapseLinks">
+                                <li>
+                                    <a href="#">
+                                        Приоритетные направления развития фундаментальных научных
+                                        исследований
+                                        <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block"
+                                             alt="arrow">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Приоритетные направления развития прикладных наук и поисковых
+                                        исследований
+                                        <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block"
+                                             alt="arrow">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Стратегия научно-технологического развития Российской Федерации
+                                        <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block"
+                                             alt="arrow">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Национальные проекты
+                                        <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block"
+                                             alt="arrow">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Государственные программы Российской Федерации
+                                        <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block"
+                                             alt="arrow">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Программы фундаментальных научных исследований
+                                        <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block"
+                                             alt="arrow">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Прочие аналитические и иные материалы
+                                        <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block"
+                                             alt="arrow">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Методические материалы
+                                        <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block"
+                                             alt="arrow">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Эффективность деятельности научных организаций
+                                        <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block"
+                                             alt="arrow">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Инновации РААСН
+                                <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block" alt="arrow">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Экспертное научное обеспечение
+                                <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block" alt="arrow">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Издания РААСН
+                                <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block" alt="arrow">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="structure">
+                    <a href="javascript:void(0)" class="collapseBtn">
+                        Структура
+                        <img src="assets/img/arrow.svg" class="arrow d-none d-lg-inline-block" alt="arrow">
+                        <img src="assets/img/arrow-black.svg" class="d-lg-none d-inline-block" alt="arrow">
+                    </a>
+                    <ul class="collapseLinks">
+                        <li>
+                            <a href="#">
+                                Структура
+                                <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block" alt="arrow">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Структура
+                                <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block" alt="arrow">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Структура
+                                <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block" alt="arrow">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Структура
+                                <img src="assets/img/smallGrayArrow.svg" class="d-lg-none d-inline-block" alt="arrow">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        Новости
+                        <img src="assets/img/arrow-black.svg" class="d-lg-none d-inline-block" alt="arrow">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Архив
+                        <img src="assets/img/arrow-black.svg" class="d-lg-none d-inline-block" alt="arrow">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Контакты
+                        <img src="assets/img/arrow-black.svg" class="d-lg-none d-inline-block" alt="arrow">
+                    </a>
+                </li>
+                <li class="d-none d-lg-inline-block">
+                    <div class="auth">
+                        <a href="#">Корзина</a>
+                        <a href="#">Вход</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="login">
+    <div class="head-title">
+        Регистрация
+    </div>
+    <div class="content">
+        <form action="" class="form">
+            <div class="fields">
+                <div class="field">
+                    <input type="text" placeholder="Почта или телефон">
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Пароль">
+                    <button type="button" class="eye">
+                        <img src="assets/img/eye.svg" alt="eye">
+                    </button>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Повторите пароль">
+                    <button type="button" class="eye">
+                        <img src="assets/img/eye.svg" alt="eye">
+                    </button>
+                </div>
+            </div>
+
+            <div class="login-reg">
+                <button>
+                    Зарегистрироваться
+                </button>
+                <a href="">
+                    Войти
+                </a>
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="copyright">
+        © Российская академия архитектуры и строительных наук, 1992-2023
+        При использовании текстовых и графических материалов ссылка на сайт обязательна
+    </div>
+    <div class="social-media">
+        <a href="#" target="_blank">
+            <img src="assets/img/socials/user.svg" alt="user">
+        </a>
+        <a href="#" target="_blank">
+            <img src="assets/img/socials/facebook.svg" alt="facebook">
+        </a>
+        <a href="#" target="_blank">
+            <img src="assets/img/socials/twitter.svg" alt="twitter">
+        </a>
+        <a href="#" target="_blank">
+            <img src="assets/img/socials/youtube.svg" alt="youtube">
+        </a>
+    </div>
+</footer>
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/headerMenu.js"></script>
+<script src="assets/js/auth.js"></script>
+</body>
+</html>
