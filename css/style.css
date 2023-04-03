@@ -323,17 +323,6 @@
   .header nav a {
     white-space: inherit; } }
 
-.page-head-title {
-  font-family: 'Playfair Display', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 40px;
-  letter-spacing: 1px;
-  padding: 28px 64px;
-  background-color: #EEEDF2;
-  margin-top: 106px; }
-
 .personal-account {
   padding: 56px 64px 0; }
   .personal-account .content {
@@ -477,10 +466,7 @@
       flex-direction: column; }
       .personal-account .content .avatar-info {
         margin-right: 0;
-        margin-bottom: 20px; }
-  .page-head-title {
-    margin-top: 86px;
-    padding: 28px 32px; } }
+        margin-bottom: 20px; } }
 
 @media only screen and (max-width: 575px) {
   .personal-account {
@@ -522,12 +508,7 @@
       .personal-account .field-name .changeable input::placeholder {
         font-size: 16px;
         line-height: 20px;
-        letter-spacing: 0.6px; }
-  .page-head-title {
-    padding: 20px 16px;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 0.5px; } }
+        letter-spacing: 0.6px; } }
 
 .login {
   padding-top: 106px;
@@ -670,150 +651,6 @@
 @media only screen and (max-width: 767px) {
   .partners {
     padding: 20px 16px; } }
-
-.internet-shop {
-  padding: 56px 64px; }
-  .internet-shop .shop-head {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin-bottom: 24px; }
-    .internet-shop .shop-head h3 {
-      font-family: 'Playfair Display', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 30px;
-      line-height: 40px;
-      letter-spacing: 1px;
-      margin-bottom: 0; }
-    .internet-shop .shop-head .more {
-      font-size: 16px;
-      line-height: 24px;
-      letter-spacing: 0.2px;
-      color: #0E0E1B;
-      display: flex;
-      align-items: center; }
-      .internet-shop .shop-head .more img {
-        margin-left: 2px;
-        transition: .3s; }
-      .internet-shop .shop-head .more:hover img {
-        transform: translate(3px); }
-  .internet-shop .shop-items {
-    display: flex; }
-    .internet-shop .shop-items .item {
-      width: calc((100% / 4) - 2px);
-      border: 2px solid #EEEDF2;
-      margin: 1px; }
-      .internet-shop .shop-items .item .internetShop {
-        padding: 24px 36px;
-        background-color: #EEEDF2; }
-      .internet-shop .shop-items .item .desc {
-        padding: 16px 36px; }
-        .internet-shop .shop-items .item .desc .title {
-          font-size: 14px;
-          line-height: 20px;
-          letter-spacing: 0.4px;
-          margin-bottom: 4px;
-          height: 40px;
-          -webkit-line-clamp: 2;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          overflow: hidden; }
-        .internet-shop .shop-items .item .desc .sub-title {
-          font-size: 12px;
-          line-height: 16px;
-          letter-spacing: 0.6px; }
-      .internet-shop .shop-items .item .price-basket {
-        margin-top: 12px;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end; }
-        .internet-shop .shop-items .item .price-basket .price {
-          font-size: 24px;
-          line-height: 36px;
-          margin-right: 5px; }
-        .internet-shop .shop-items .item .price-basket .basket {
-          font-size: 14px;
-          line-height: 20px;
-          letter-spacing: 0.2px;
-          border: 2px solid #EEEDF2;
-          padding: 6px 14px;
-          background-color: transparent;
-          transition: .3s; }
-          .internet-shop .shop-items .item .price-basket .basket:hover {
-            opacity: .6; }
-          .internet-shop .shop-items .item .price-basket .basket .basket-price {
-            margin-right: 6px;
-            font-size: 18px;
-            line-height: 28px; }
-  .internet-shop .slick-slide img {
-    width: 100%; }
-  .internet-shop .slick-dots {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: calc(100% - 72px); }
-    .internet-shop .slick-dots li {
-      width: calc(100% / 3);
-      height: 3px;
-      background-color: #D1D0DB;
-      cursor: pointer; }
-      .internet-shop .slick-dots li.slick-active {
-        background-color: #0E0E1B; }
-      .internet-shop .slick-dots li:not(:last-child) {
-        margin-right: 2px; }
-      .internet-shop .slick-dots li button {
-        display: none; }
-
-@media only screen and (max-width: 1199px) {
-  .internet-shop {
-    padding: 32px; }
-    .internet-shop .shop-items .item .internetShop {
-      padding: 20px 16px; }
-    .internet-shop .shop-items .item .desc {
-      padding: 12px 16px 16px; }
-    .internet-shop .slick-dots {
-      width: calc(100% - 32px); } }
-
-@media only screen and (max-width: 991px) {
-  .internet-shop .shop-items .item .price-basket .basket {
-    width: 100%; } }
-
-@media only screen and (max-width: 767px) {
-  .internet-shop {
-    padding-bottom: 48px; }
-    .internet-shop .shop-head {
-      padding: 0 16px; }
-      .internet-shop .shop-head h3 {
-        font-size: 24px;
-        line-height: 28px;
-        letter-spacing: 0.8px; }
-      .internet-shop .shop-head .more {
-        font-size: 14px;
-        line-height: 20px;
-        letter-spacing: 0.4px; }
-    .internet-shop .shop-items {
-      flex-wrap: wrap; }
-      .internet-shop .shop-items .item {
-        width: calc(50% - 2px); } }
-
-@media only screen and (max-width: 575px) {
-  .internet-shop {
-    padding-left: 0;
-    padding-right: 0; }
-    .internet-shop .shop-head {
-      margin-bottom: 20px; }
-    .internet-shop .shop-items .item .desc .title {
-      height: 32px; }
-    .internet-shop .shop-items .item .desc .title, .internet-shop .shop-items .item .desc .sub-title {
-      font-size: 12px;
-      line-height: 16px;
-      letter-spacing: 0.6px; } }
 
 .features {
   display: flex;
@@ -992,6 +829,207 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555555; } }
+
+.page-head-title {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  padding: 28px 64px;
+  background-color: #EEEDF2;
+  margin-top: 106px; }
+  .page-head-title .title-breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px; }
+    .page-head-title .title-breadcrumb span, .page-head-title .title-breadcrumb a {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.4px;
+      color: #7B7B8C; }
+    .page-head-title .title-breadcrumb img {
+      margin-left: 2px;
+      margin-right: 6px; }
+
+.internet-shop {
+  padding: 56px 64px; }
+  .internet-shop.alone {
+    padding-bottom: 16px;
+    padding-top: 16px; }
+    .internet-shop.alone:first-child {
+      margin-top: 40px; }
+  .internet-shop .shop-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 24px; }
+    .internet-shop .shop-head h3 {
+      font-family: 'Playfair Display', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 40px;
+      letter-spacing: 1px;
+      margin-bottom: 0; }
+    .internet-shop .shop-head .more {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: #0E0E1B;
+      display: flex;
+      align-items: center; }
+      .internet-shop .shop-head .more img {
+        margin-left: 2px;
+        transition: .3s; }
+      .internet-shop .shop-head .more:hover img {
+        transform: translate(3px); }
+  .internet-shop .shop-items {
+    display: flex; }
+    .internet-shop .shop-items .item {
+      width: calc((100% / 4) - 2px);
+      border: 2px solid #EEEDF2;
+      margin: 1px; }
+      .internet-shop .shop-items .item .internetShop {
+        padding: 24px 36px;
+        background-color: #EEEDF2; }
+      .internet-shop .shop-items .item .desc {
+        padding: 16px 36px; }
+        .internet-shop .shop-items .item .desc .title {
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 0.4px;
+          margin-bottom: 4px;
+          height: 40px;
+          -webkit-line-clamp: 2;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          overflow: hidden; }
+        .internet-shop .shop-items .item .desc .sub-title {
+          font-size: 12px;
+          line-height: 16px;
+          letter-spacing: 0.6px; }
+        .internet-shop .shop-items .item .desc .sub-desc {
+          font-size: 12px;
+          line-height: 16px;
+          letter-spacing: 0.6px;
+          color: #7B7B8C;
+          height: 48px;
+          -webkit-line-clamp: 3;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          overflow: hidden; }
+      .internet-shop .shop-items .item .price-basket {
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end; }
+        .internet-shop .shop-items .item .price-basket .price {
+          font-size: 24px;
+          line-height: 36px;
+          margin-right: 5px; }
+        .internet-shop .shop-items .item .price-basket .basket {
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 0.2px;
+          border: 2px solid #EEEDF2;
+          padding: 6px 14px;
+          background-color: transparent;
+          transition: .3s; }
+          .internet-shop .shop-items .item .price-basket .basket:hover {
+            opacity: .6; }
+          .internet-shop .shop-items .item .price-basket .basket .basket-price {
+            margin-right: 6px;
+            font-size: 18px;
+            line-height: 28px; }
+  .internet-shop .slick-slide img {
+    width: 100%; }
+  .internet-shop .slick-dots {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: calc(100% - 72px); }
+    .internet-shop .slick-dots li {
+      width: calc(100% / 3);
+      height: 3px;
+      background-color: #D1D0DB;
+      cursor: pointer; }
+      .internet-shop .slick-dots li.slick-active {
+        background-color: #0E0E1B; }
+      .internet-shop .slick-dots li:not(:last-child) {
+        margin-right: 2px; }
+      .internet-shop .slick-dots li button {
+        display: none; }
+
+@media only screen and (max-width: 1199px) {
+  .internet-shop {
+    padding: 32px; }
+    .internet-shop .shop-items .item .internetShop {
+      padding: 20px 16px; }
+    .internet-shop .shop-items .item .desc {
+      padding: 12px 16px 16px; }
+    .internet-shop .slick-dots {
+      width: calc(100% - 32px); } }
+
+@media only screen and (max-width: 991px) {
+  .internet-shop .shop-items .item .price-basket .basket {
+    width: 100%; }
+  .page-head-title {
+    margin-top: 86px;
+    padding: 28px 32px; } }
+
+@media only screen and (max-width: 767px) {
+  .internet-shop {
+    padding-bottom: 48px; }
+    .internet-shop .shop-head {
+      padding: 0 16px; }
+      .internet-shop .shop-head h3 {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.8px; }
+      .internet-shop .shop-head .more {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.4px; }
+    .internet-shop .shop-items {
+      flex-wrap: wrap; }
+      .internet-shop .shop-items .item {
+        width: calc(50% - 2px); } }
+
+@media only screen and (max-width: 575px) {
+  .internet-shop {
+    padding-left: 0;
+    padding-right: 0; }
+    .internet-shop .shop-head {
+      margin-bottom: 20px; }
+    .internet-shop .shop-items .item .desc .title {
+      height: 32px; }
+    .internet-shop .shop-items .item .desc .title, .internet-shop .shop-items .item .desc .sub-title {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.6px; }
+    .internet-shop .shop-items .item .desc .sub-desc {
+      font-size: 10px;
+      line-height: 14px;
+      letter-spacing: .8px;
+      height: 42px; }
+  .page-head-title {
+    padding: 20px 16px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.5px; }
+    .page-head-title .title-breadcrumb span, .page-head-title .title-breadcrumb a {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: .6px; }
+    .page-head-title .title-breadcrumb img {
+      margin-right: 4px; } }
 
 .footer {
   padding: 12px 64px;

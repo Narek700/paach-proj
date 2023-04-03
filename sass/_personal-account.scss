@@ -1,17 +1,5 @@
 @import "variables";
 
-.page-head-title {
-  font-family: 'Playfair Display', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 40px;
-  letter-spacing: 1px;
-  padding: 28px 64px;
-  background-color: #EEEDF2;
-  margin-top: 106px;
-}
-
 .personal-account {
   padding: 56px 64px 0;
 
@@ -221,11 +209,6 @@
       }
     }
   }
-
-  .page-head-title {
-    margin-top: 86px;
-    padding: 28px 32px;
-  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -303,12 +286,5 @@
         }
       }
     }
-  }
-
-  .page-head-title {
-    padding: 20px 16px;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 0.5px;
   }
 }
