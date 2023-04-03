@@ -382,6 +382,15 @@
       border: 2px solid #EEEDF2;
       max-width: 460px;
       width: 100%; }
+  .personal-account .log-out {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .2px;
+    color: #0E0E1B;
+    padding: 10px 30px;
+    border: 2px solid #EEEDF2;
+    background-color: transparent;
+    margin-top: 32px; }
   .personal-account .story-info:not(:last-child) {
     margin-bottom: 32px; }
   .personal-account .story-info .head {
@@ -471,6 +480,13 @@
 @media only screen and (max-width: 575px) {
   .personal-account {
     padding: 32px 16px 0; }
+    .personal-account .log-out {
+      width: 100%;
+      padding: 8px;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: .2px;
+      margin-top: 20px; }
     .personal-account .content .avatar-info {
       max-width: 100%; }
       .personal-account .content .avatar-info .wrapper-top {

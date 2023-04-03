@@ -84,6 +84,17 @@
     }
   }
 
+  .log-out {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .2px;
+    color: $primary;
+    padding: 10px 30px;
+    border: 2px solid #EEEDF2;
+    background-color: transparent;
+    margin-top: 32px;
+  }
+
   .story-info {
     &:not(:last-child) {
       margin-bottom: 32px;
@@ -214,6 +225,15 @@
 @media only screen and (max-width: 575px) {
   .personal-account {
     padding: 32px 16px 0;
+
+    .log-out {
+      width: 100%;
+      padding: 8px;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: .2px;
+      margin-top: 20px;
+    }
 
     .content {
       .avatar-info {
