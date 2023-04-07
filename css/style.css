@@ -1191,6 +1191,19 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
   border: 2px solid #EEEDF2;
   font-weight: bold; }
 
+.internal-desc {
+  padding: 56px 64px 0; }
+  .internal-desc p {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .2px; }
+  .internal-desc .redirect-to {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .2px;
+    color: #7B7B8C; }
+
 @media only screen and (max-width: 1299px) {
   .internet-shop .shop-items .item .price-basket .price {
     font-size: 20px; }
@@ -1210,7 +1223,9 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
     .internet-shop .slick-dots {
       width: calc(100% - 32px); }
   .reviews-block {
-    padding: 0 32px; } }
+    padding: 0 32px; }
+  .internal-desc {
+    padding: 32px 32px 0; } }
 
 @media only screen and (max-width: 991px) {
   .internet-shop .shop-items .item .price-basket .basket {
@@ -1341,7 +1356,17 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
   .internet-shop .product-card-info .r-b .p-info .info .r {
     font-size: 12px; }
     .internet-shop .product-card-info .r-b .p-info .info .r span {
-      font-size: 12px; } }
+      font-size: 12px; }
+  .internal-desc {
+    padding: 32px 16px 0; }
+    .internal-desc p {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: .4px; }
+    .internal-desc .redirect-to {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: .4px; } }
 
 .footer {
   padding: 12px 64px;

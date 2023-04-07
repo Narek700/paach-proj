@@ -544,6 +544,23 @@ button, input, .form-control, .btn {
   font-weight: bold;
 }
 
+.internal-desc {
+  padding: 56px 64px 0;
+
+  p {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .2px;
+  }
+
+  .redirect-to {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .2px;
+    color: #7B7B8C;
+  }
+}
 
 @media only screen and (max-width: 1299px) {
   .internet-shop .shop-items .item .price-basket .price {
@@ -579,8 +596,13 @@ button, input, .form-control, .btn {
       width: calc(100% - 32px);
     }
   }
+
   .reviews-block {
     padding: 0 32px;
+  }
+
+  .internal-desc {
+    padding: 32px 32px 0;
   }
 }
 
@@ -795,6 +817,7 @@ button, input, .form-control, .btn {
         }
       }
     }
+
     .read-more {
       width: 90%;
       margin-left: 5%;
@@ -806,6 +829,22 @@ button, input, .form-control, .btn {
 
     span {
       font-size: 12px;
+    }
+  }
+
+  .internal-desc {
+    padding: 32px 16px 0;
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: .4px;
+    }
+
+    .redirect-to {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: .4px;
     }
   }
 }
