@@ -835,7 +835,7 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
 @media only screen and (min-width: 992px) {
   /* width */
   ::-webkit-scrollbar {
-    width: 10px; }
+    width: 5px; }
   /* Track */
   ::-webkit-scrollbar-track {
     background: #f1f1f1; }
@@ -932,12 +932,17 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
         transition: .3s; }
       .internet-shop .shop-head .more:hover img {
         transform: translate(3px); }
+  .internet-shop .read-more {
+    margin-top: 32px; }
   .internet-shop .shop-items {
     display: flex; }
     .internet-shop .shop-items .item {
       width: calc((100% / 4) - 2px);
       border: 2px solid #EEEDF2;
       margin: 1px; }
+      .internet-shop .shop-items .item.item-50 {
+        width: calc(50% - 2px);
+        margin: 32px 1px; }
       .internet-shop .shop-items .item .internetShop {
         padding: 24px 36px;
         background-color: #EEEDF2; }
@@ -948,7 +953,7 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
           line-height: 20px;
           letter-spacing: 0.4px;
           margin-bottom: 4px;
-          height: 40px;
+          max-height: 40px;
           -webkit-line-clamp: 2;
           display: -webkit-box;
           -webkit-box-orient: vertical;
@@ -962,11 +967,14 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
           line-height: 16px;
           letter-spacing: 0.6px;
           color: #7B7B8C;
-          height: 48px;
+          max-height: 48px;
           -webkit-line-clamp: 3;
           display: -webkit-box;
           -webkit-box-orient: vertical;
           overflow: hidden; }
+          .internet-shop .shop-items .item .desc .sub-desc.sub-desc-4 {
+            max-height: 64px;
+            -webkit-line-clamp: 4; }
       .internet-shop .shop-items .item .price-basket {
         margin-top: 12px;
         display: flex;
@@ -1171,16 +1179,17 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
       letter-spacing: 0.2px;
       padding: 20px 32px;
       background: #EEEDF2; }
-  .reviews-block .more {
-    width: 100%;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: .2px;
-    padding: 16px;
-    background-color: transparent;
-    border: 2px solid #EEEDF2;
-    font-weight: bold; }
+
+.read-more {
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: .2px;
+  padding: 16px;
+  background-color: transparent;
+  border: 2px solid #EEEDF2;
+  font-weight: bold; }
 
 @media only screen and (max-width: 1299px) {
   .internet-shop .shop-items .item .price-basket .price {
@@ -1262,10 +1271,10 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
       font-size: 14px;
       line-height: 20px;
       padding: 12px 16px; }
-    .reviews-block .more {
-      font-size: 14px;
-      line-height: 20px;
-      padding: 12px; } }
+  .read-more {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 12px; } }
 
 @media only screen and (max-width: 575px) {
   .internet-shop {
@@ -1273,6 +1282,9 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
     padding-right: 0; }
     .internet-shop .shop-head {
       margin-bottom: 20px; }
+    .internet-shop .shop-items .item.item-50 {
+      width: 100%;
+      margin: 1px; }
     .internet-shop .shop-items .item .desc .title {
       height: 32px; }
     .internet-shop .shop-items .item .desc .title, .internet-shop .shop-items .item .desc .sub-title {
@@ -1322,7 +1334,14 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
         height: 408px;
         width: 300px; }
     .internet-shop .product-card-info .c-wrapper .slick-dots {
-      bottom: -24px; } }
+      bottom: -24px; }
+  .internet-shop .read-more {
+    width: 90%;
+    margin-left: 5%; }
+  .internet-shop .product-card-info .r-b .p-info .info .r {
+    font-size: 12px; }
+    .internet-shop .product-card-info .r-b .p-info .info .r span {
+      font-size: 12px; } }
 
 .footer {
   padding: 12px 64px;
