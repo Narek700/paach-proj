@@ -190,7 +190,19 @@ button, input, .form-control, .btn {
         margin: 32px 1px;
       }
 
-      .internetShop {
+      &.arch-item {
+        .personal-info-box {
+          img {
+            width: 100%
+          }
+        }
+
+        .price-basket {
+          margin-top: 32px;
+        }
+      }
+
+      .internetShop, .personal-info-box {
         padding: 24px 36px;
         background-color: #EEEDF2;
       }
@@ -562,6 +574,27 @@ button, input, .form-control, .btn {
   }
 }
 
+.more-info-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 64px 32px;
+
+  a {
+    background: transparent;
+    border: 2px solid #EEEDF2;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: $primary;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 3 - 20px);
+    letter-spacing: .2px;
+  }
+}
+
 @media only screen and (max-width: 1299px) {
   .internet-shop .shop-items .item .price-basket .price {
     font-size: 20px;
@@ -583,7 +616,7 @@ button, input, .form-control, .btn {
     padding: 32px;
 
     .shop-items .item {
-      .internetShop {
+      .internetShop, .personal-info-box {
         padding: 20px 16px;
       }
 
@@ -603,6 +636,10 @@ button, input, .form-control, .btn {
 
   .internal-desc {
     padding: 32px 32px 0;
+  }
+
+  .more-info-btn {
+    padding: 0 32px 32px;
   }
 }
 
@@ -711,6 +748,21 @@ button, input, .form-control, .btn {
     font-size: 14px;
     line-height: 20px;
     padding: 12px;
+  }
+
+  .more-info-btn {
+    flex-direction: column;
+
+    a {
+      font-size: 14px;
+      line-height: 20px;
+      width: 100%;
+      padding: 12px;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
   }
 }
 
@@ -846,5 +898,9 @@ button, input, .form-control, .btn {
       line-height: 20px;
       letter-spacing: .4px;
     }
+  }
+
+  .more-info-btn {
+    padding: 0 16px 16px;
   }
 }

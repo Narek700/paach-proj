@@ -943,7 +943,11 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
       .internet-shop .shop-items .item.item-50 {
         width: calc(50% - 2px);
         margin: 32px 1px; }
-      .internet-shop .shop-items .item .internetShop {
+      .internet-shop .shop-items .item.arch-item .personal-info-box img {
+        width: 100%; }
+      .internet-shop .shop-items .item.arch-item .price-basket {
+        margin-top: 32px; }
+      .internet-shop .shop-items .item .internetShop, .internet-shop .shop-items .item .personal-info-box {
         padding: 24px 36px;
         background-color: #EEEDF2; }
       .internet-shop .shop-items .item .desc {
@@ -1204,6 +1208,24 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
     letter-spacing: .2px;
     color: #7B7B8C; }
 
+.more-info-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 64px 32px; }
+  .more-info-btn a {
+    background: transparent;
+    border: 2px solid #EEEDF2;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #0E0E1B;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 3 - 20px);
+    letter-spacing: .2px; }
+
 @media only screen and (max-width: 1299px) {
   .internet-shop .shop-items .item .price-basket .price {
     font-size: 20px; }
@@ -1216,7 +1238,7 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
 @media only screen and (max-width: 1199px) {
   .internet-shop {
     padding: 32px; }
-    .internet-shop .shop-items .item .internetShop {
+    .internet-shop .shop-items .item .internetShop, .internet-shop .shop-items .item .personal-info-box {
       padding: 20px 16px; }
     .internet-shop .shop-items .item .desc {
       padding: 12px 16px 16px; }
@@ -1225,7 +1247,9 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
   .reviews-block {
     padding: 0 32px; }
   .internal-desc {
-    padding: 32px 32px 0; } }
+    padding: 32px 32px 0; }
+  .more-info-btn {
+    padding: 0 32px 32px; } }
 
 @media only screen and (max-width: 991px) {
   .internet-shop .shop-items .item .price-basket .basket {
@@ -1289,7 +1313,16 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
   .read-more {
     font-size: 14px;
     line-height: 20px;
-    padding: 12px; } }
+    padding: 12px; }
+  .more-info-btn {
+    flex-direction: column; }
+    .more-info-btn a {
+      font-size: 14px;
+      line-height: 20px;
+      width: 100%;
+      padding: 12px; }
+      .more-info-btn a:not(:last-child) {
+        margin-bottom: 16px; } }
 
 @media only screen and (max-width: 575px) {
   .internet-shop {
@@ -1366,7 +1399,9 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
     .internal-desc .redirect-to {
       font-size: 14px;
       line-height: 20px;
-      letter-spacing: .4px; } }
+      letter-spacing: .4px; }
+  .more-info-btn {
+    padding: 0 16px 16px; } }
 
 .footer {
   padding: 12px 64px;
