@@ -13,5 +13,96 @@
     margin-right: 32px;
     max-width: 362px;
     width: 100%;
+
+    img {
+      margin-bottom: 32px;
+    }
+
+    .bio-info .bio-desc .bio-row div {
+      width: 170px;
+    }
   }
+
+  .bio-info {
+    h4 {
+      font-family: 'Playfair Display', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: .5px;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: .2px;
+      margin-bottom: 12px;
+    }
+
+    .bio-desc {
+      margin-bottom: 32px;
+
+      .bio-row {
+        display: flex;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: .4px;
+        margin-bottom: 12px;
+
+        span {
+          color: #7B7B8C;
+          width: 180px;
+          display: flex;
+          overflow: hidden;
+          margin-right: 8px;
+          white-space: nowrap;
+
+          &:after {
+            content: '................................................';
+            margin-left: 8px;
+          }
+        }
+
+        div {
+          width: calc(100% - 180px);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .biography {
+    padding: 32px 32px 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .biography {
+    padding: 32px 16px 24px;
+
+    .bio-wrapper {
+      flex-direction: column;
+
+      img {
+        max-width: 100%;
+      }
+
+      & > .bio-info {
+        width: 100%;
+      }
+
+      .bio-info .bio-desc .bio-row span {
+        width: 150px;
+      }
+    }
+  }
+
+  .biography .bio-column {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
 }

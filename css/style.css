@@ -333,6 +333,62 @@
     margin-right: 32px;
     max-width: 362px;
     width: 100%; }
+    .biography .bio-column img {
+      margin-bottom: 32px; }
+    .biography .bio-column .bio-info .bio-desc .bio-row div {
+      width: 170px; }
+  .biography .bio-info h4 {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: .5px;
+    margin-bottom: 16px; }
+  .biography .bio-info p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .2px;
+    margin-bottom: 12px; }
+  .biography .bio-info .bio-desc {
+    margin-bottom: 32px; }
+    .biography .bio-info .bio-desc .bio-row {
+      display: flex;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: .4px;
+      margin-bottom: 12px; }
+      .biography .bio-info .bio-desc .bio-row span {
+        color: #7B7B8C;
+        width: 180px;
+        display: flex;
+        overflow: hidden;
+        margin-right: 8px;
+        white-space: nowrap; }
+        .biography .bio-info .bio-desc .bio-row span:after {
+          content: '................................................';
+          margin-left: 8px; }
+      .biography .bio-info .bio-desc .bio-row div {
+        width: calc(100% - 180px); }
+
+@media only screen and (max-width: 1199px) {
+  .biography {
+    padding: 32px 32px 24px; } }
+
+@media only screen and (max-width: 767px) {
+  .biography {
+    padding: 32px 16px 24px; }
+    .biography .bio-wrapper {
+      flex-direction: column; }
+      .biography .bio-wrapper img {
+        max-width: 100%; }
+      .biography .bio-wrapper > .bio-info {
+        width: 100%; }
+      .biography .bio-wrapper .bio-info .bio-desc .bio-row span {
+        width: 150px; }
+  .biography .bio-column {
+    max-width: 100%;
+    margin-right: 0; } }
 
 .personal-account {
   padding: 56px 64px 0; }
