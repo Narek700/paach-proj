@@ -969,6 +969,9 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
 
 .internet-shop {
   padding: 56px 64px; }
+  .internet-shop.shop-bottom {
+    padding-bottom: 0;
+    padding-top: 24px; }
   .internet-shop.alone {
     padding-bottom: 16px;
     padding-top: 16px; }
@@ -1029,6 +1032,9 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
           display: -webkit-box;
           -webkit-box-orient: vertical;
           overflow: hidden; }
+          .internet-shop .shop-items .item .desc .title.title-2 {
+            max-height: inherit;
+            -webkit-line-clamp: 4; }
         .internet-shop .shop-items .item .desc .sub-title {
           font-size: 12px;
           line-height: 16px;
