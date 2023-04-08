@@ -323,6 +323,17 @@
   .header nav a {
     white-space: inherit; } }
 
+.biography {
+  padding: 56px 64px 24px; }
+  .biography .bio-wrapper {
+    display: flex; }
+    .biography .bio-wrapper > .bio-info {
+      width: calc(100% - 362px); }
+  .biography .bio-column {
+    margin-right: 32px;
+    max-width: 362px;
+    width: 100%; }
+
 .personal-account {
   padding: 56px 64px 0; }
   .personal-account .content {
