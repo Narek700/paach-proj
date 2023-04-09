@@ -1353,7 +1353,7 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
 .map {
   padding: 64px; }
   .map img {
-    max-width: 100%; }
+    width: 100%; }
 
 .block-info {
   padding: 0 64px 32px;
