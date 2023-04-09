@@ -623,11 +623,28 @@ button, input, .form-control, .btn {
 
 .block-info {
   padding: 0 64px 32px;
+  display: flex;
 
   .item {
     border: 2px solid #EEEDF2;
     margin: 1px;
-    width: calc(100% / 3 - 1px);
+    width: calc(100% / 3 - 2px);
+
+    &.item-50 {
+      width: calc(100% / 2 - 2px);
+
+      .item-body .contact .c-row span {
+        width: 170%;
+      }
+    }
+
+    .img-map {
+      display: none;
+
+      img {
+        width: 100%;
+      }
+    }
 
     .item-head {
       background: #EEEDF2;
@@ -697,7 +714,61 @@ button, input, .form-control, .btn {
         color: #7B7B8C;
         margin-bottom: 16px;
       }
+
+      .contact {
+        .c-row {
+          display: flex;
+          justify-content: space-between;
+
+          &:not(:last-child) {
+            margin-bottom: 12px;
+          }
+
+          span {
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: .4px;
+            color: #7B7B8C;
+            display: flex;
+            align-items: center;
+            width: 90%;
+
+            &:after {
+              content: '';
+              border-bottom: 1px dashed #7B7B8C;
+              display: block;
+              margin-left: 10px;
+              margin-right: 10px;
+              width: 100%;
+            }
+          }
+
+          a {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: right;
+            letter-spacing: .4px;
+            color: $primary;
+            display: block;
+            white-space: nowrap
+          }
+
+
+          div {
+            width: 50%;
+          }
+        }
+      }
     }
+  }
+}
+
+@media only screen and (max-width: 1499px) {
+  .block-info .item .item-body .contact .c-row span {
+    width: 50%;
+  }
+  .block-info .item.item-50 .item-body .contact .c-row span {
+    width: 100%;
   }
 }
 
@@ -746,6 +817,15 @@ button, input, .form-control, .btn {
 
   .more-info-btn {
     padding: 0 32px 32px;
+  }
+
+  .block-info {
+    flex-wrap: wrap;
+    padding: 0 32px 32px;
+
+    .item {
+      width: calc(50% - 2px);
+    }
   }
 }
 
@@ -869,6 +949,66 @@ button, input, .form-control, .btn {
         margin-bottom: 16px;
       }
     }
+  }
+
+  .block-info {
+    flex-wrap: wrap;
+
+    .item {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+
+      .img-map {
+        display: block;
+      }
+
+      &.item-50 {
+        width: 100%;
+      }
+
+      .item-head {
+        padding: 12px 16px;
+
+        .left-block {
+          width: calc(100% - 50px);
+
+          h4 {
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+
+        .point {
+          width: 30px;
+          height: 30px;
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+
+      .item-body {
+        padding: 8px 16px;
+
+        .contact .c-row span {
+          width: 70%;
+        }
+
+        h4 {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  .map {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    padding: 32px 0 0;
   }
 }
 
@@ -1008,5 +1148,9 @@ button, input, .form-control, .btn {
 
   .more-info-btn {
     padding: 0 16px 16px;
+  }
+
+  .block-info {
+    padding: 0 16px 32px;
   }
 }

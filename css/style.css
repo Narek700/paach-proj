@@ -1356,11 +1356,20 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
     max-width: 100%; }
 
 .block-info {
-  padding: 0 64px 32px; }
+  padding: 0 64px 32px;
+  display: flex; }
   .block-info .item {
     border: 2px solid #EEEDF2;
     margin: 1px;
-    width: calc(100% / 3 - 1px); }
+    width: calc(100% / 3 - 2px); }
+    .block-info .item.item-50 {
+      width: calc(100% / 2 - 2px); }
+      .block-info .item.item-50 .item-body .contact .c-row span {
+        width: 170%; }
+    .block-info .item .img-map {
+      display: none; }
+      .block-info .item .img-map img {
+        width: 100%; }
     .block-info .item .item-head {
       background: #EEEDF2;
       padding: 24px 36px;
@@ -1409,6 +1418,42 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
         letter-spacing: .4px;
         color: #7B7B8C;
         margin-bottom: 16px; }
+      .block-info .item .item-body .contact .c-row {
+        display: flex;
+        justify-content: space-between; }
+        .block-info .item .item-body .contact .c-row:not(:last-child) {
+          margin-bottom: 12px; }
+        .block-info .item .item-body .contact .c-row span {
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: .4px;
+          color: #7B7B8C;
+          display: flex;
+          align-items: center;
+          width: 90%; }
+          .block-info .item .item-body .contact .c-row span:after {
+            content: '';
+            border-bottom: 1px dashed #7B7B8C;
+            display: block;
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 100%; }
+        .block-info .item .item-body .contact .c-row a {
+          font-size: 14px;
+          line-height: 20px;
+          text-align: right;
+          letter-spacing: .4px;
+          color: #0E0E1B;
+          display: block;
+          white-space: nowrap; }
+        .block-info .item .item-body .contact .c-row div {
+          width: 50%; }
+
+@media only screen and (max-width: 1499px) {
+  .block-info .item .item-body .contact .c-row span {
+    width: 50%; }
+  .block-info .item.item-50 .item-body .contact .c-row span {
+    width: 100%; } }
 
 @media only screen and (max-width: 1299px) {
   .internet-shop .shop-items .item .price-basket .price {
@@ -1433,7 +1478,12 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
   .internal-desc {
     padding: 32px 32px 0; }
   .more-info-btn {
-    padding: 0 32px 32px; } }
+    padding: 0 32px 32px; }
+  .block-info {
+    flex-wrap: wrap;
+    padding: 0 32px 32px; }
+    .block-info .item {
+      width: calc(50% - 2px); } }
 
 @media only screen and (max-width: 991px) {
   .internet-shop .shop-items .item .price-basket .basket {
@@ -1506,7 +1556,41 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
       width: 100%;
       padding: 12px; }
       .more-info-btn a:not(:last-child) {
-        margin-bottom: 16px; } }
+        margin-bottom: 16px; }
+  .block-info {
+    flex-wrap: wrap; }
+    .block-info .item {
+      width: 100%; }
+      .block-info .item:not(:last-child) {
+        margin-bottom: 24px; }
+      .block-info .item .img-map {
+        display: block; }
+      .block-info .item.item-50 {
+        width: 100%; }
+      .block-info .item .item-head {
+        padding: 12px 16px; }
+        .block-info .item .item-head .left-block {
+          width: calc(100% - 50px); }
+          .block-info .item .item-head .left-block h4 {
+            font-size: 16px;
+            line-height: 20px; }
+        .block-info .item .item-head .point {
+          width: 30px;
+          height: 30px;
+          font-size: 18px;
+          line-height: 28px; }
+      .block-info .item .item-body {
+        padding: 8px 16px; }
+        .block-info .item .item-body .contact .c-row span {
+          width: 70%; }
+        .block-info .item .item-body h4 {
+          font-size: 16px;
+          line-height: 20px; }
+  .map {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    padding: 32px 0 0; } }
 
 @media only screen and (max-width: 575px) {
   .internet-shop {
@@ -1585,7 +1669,9 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
       line-height: 20px;
       letter-spacing: .4px; }
   .more-info-btn {
-    padding: 0 16px 16px; } }
+    padding: 0 16px 16px; }
+  .block-info {
+    padding: 0 16px 32px; } }
 
 .footer {
   padding: 12px 64px;
