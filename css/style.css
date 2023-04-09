@@ -1350,6 +1350,66 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
     width: calc(100% / 3 - 20px);
     letter-spacing: .2px; }
 
+.map {
+  padding: 64px; }
+  .map img {
+    max-width: 100%; }
+
+.block-info {
+  padding: 0 64px 32px; }
+  .block-info .item {
+    border: 2px solid #EEEDF2;
+    margin: 1px;
+    width: calc(100% / 3 - 1px); }
+    .block-info .item .item-head {
+      background: #EEEDF2;
+      padding: 24px 36px;
+      display: flex;
+      justify-content: space-between; }
+      .block-info .item .item-head .left-block {
+        margin-right: 10px;
+        width: calc(100% - 50px); }
+        .block-info .item .item-head .left-block h4 {
+          font-family: 'Playfair Display', sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: .5px; }
+        .block-info .item .item-head .left-block .desc .links {
+          display: flex; }
+          .block-info .item .item-head .left-block .desc .links a {
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: .6px;
+            color: #7B7B8C;
+            padding-bottom: 4px;
+            border-bottom: 1px dashed #7B7B8C; }
+            .block-info .item .item-head .left-block .desc .links a:not(:last-child) {
+              margin-right: 8px; }
+      .block-info .item .item-head .point {
+        background: #D1D0DB;
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    .block-info .item .item-body {
+      padding: 16px 36px 44px; }
+      .block-info .item .item-body h4 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: .2px;
+        margin-bottom: 4px; }
+      .block-info .item .item-body .sub {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: .4px;
+        color: #7B7B8C;
+        margin-bottom: 16px; }
+
 @media only screen and (max-width: 1299px) {
   .internet-shop .shop-items .item .price-basket .price {
     font-size: 20px; }
