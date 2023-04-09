@@ -1080,6 +1080,12 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
           .internet-shop .shop-items .item .desc .title.title-2 {
             max-height: inherit;
             -webkit-line-clamp: 4; }
+          .internet-shop .shop-items .item .desc .title.title-3 {
+            max-height: inherit;
+            -webkit-line-clamp: inherit;
+            -webkit-box-orient: inherit;
+            overflow: inherit;
+            height: auto; }
         .internet-shop .shop-items .item .desc .sub-title {
           font-size: 12px;
           line-height: 16px;

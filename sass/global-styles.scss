@@ -231,6 +231,14 @@ button, input, .form-control, .btn {
             max-height: inherit;
             -webkit-line-clamp: 4;
           }
+
+          &.title-3 {
+            max-height: inherit;
+            -webkit-line-clamp: inherit;
+            -webkit-box-orient: inherit;
+            overflow: inherit;
+            height: auto;
+          }
         }
 
         .sub-title {
