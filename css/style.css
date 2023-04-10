@@ -323,6 +323,212 @@
   .header nav a {
     white-space: inherit; } }
 
+.basket-main {
+  padding: 56px 64px 80px;
+  display: flex;
+  align-items: flex-start; }
+  .basket-main .l-block {
+    width: 65%;
+    margin-right: 32px; }
+    .basket-main .l-block .l-block-wrapper {
+      width: 100%;
+      display: flex;
+      border: 2px solid #EEEDF2;
+      margin-bottom: 24px; }
+      .basket-main .l-block .l-block-wrapper .img {
+        padding: 16px 32px;
+        background: #EEEDF2;
+        min-width: 130px; }
+        .basket-main .l-block .l-block-wrapper .img img {
+          width: 100%; }
+      .basket-main .l-block .l-block-wrapper .info {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 24px;
+        width: calc(100% - 130px); }
+        .basket-main .l-block .l-block-wrapper .info .i-l {
+          margin-right: 4px; }
+          .basket-main .l-block .l-block-wrapper .info .i-l h3 {
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: .4px;
+            margin-bottom: 4px; }
+          .basket-main .l-block .l-block-wrapper .info .i-l h4 {
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: .6px;
+            margin-bottom: 28px; }
+          .basket-main .l-block .l-block-wrapper .info .i-l .delete-item {
+            background-color: transparent;
+            border: 0;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: .4px;
+            color: #7B7B8C; }
+            .basket-main .l-block .l-block-wrapper .info .i-l .delete-item img {
+              margin-right: 8px; }
+        .basket-main .l-block .l-block-wrapper .info .i-r .price {
+          font-size: 24px;
+          line-height: 36px;
+          margin-bottom: 30px;
+          text-align: right;
+          white-space: nowrap; }
+        .basket-main .l-block .l-block-wrapper .info .i-r .counter {
+          border: 2px solid #EEEDF2;
+          display: flex;
+          align-items: center; }
+          .basket-main .l-block .l-block-wrapper .info .i-r .counter span {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: .2px;
+            margin: 0 25px; }
+          .basket-main .l-block .l-block-wrapper .info .i-r .counter button {
+            font-size: 24px;
+            line-height: 0;
+            width: 20px;
+            height: 20px;
+            padding: 0;
+            border: 0;
+            display: flex;
+            margin: 4px;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent; }
+          .basket-main .l-block .l-block-wrapper .info .i-r .counter .dec {
+            color: #7B7B8C; }
+  .basket-main .r-block {
+    width: 35%;
+    border: 2px solid #EEEDF2; }
+    .basket-main .r-block .r-wrapper {
+      padding: 24px; }
+      .basket-main .r-block .r-wrapper .bh-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px; }
+        .basket-main .r-block .r-wrapper .bh-row span:first-child {
+          font-size: 24px;
+          line-height: 36px; }
+        .basket-main .r-block .r-wrapper .bh-row span:last-child {
+          font-size: 32px;
+          line-height: 40px; }
+      .basket-main .r-block .r-wrapper .ph-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6px; }
+        .basket-main .r-block .r-wrapper .ph-row span {
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: .4px;
+          color: #7B7B8C; }
+      .basket-main .r-block .r-wrapper .pay {
+        width: 100%;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: 2px solid #EEEDF2;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: .2px;
+        margin-top: 18px; }
+    .basket-main .r-block .r-footer {
+      background: #EEEDF2;
+      padding: 16px 24px; }
+      .basket-main .r-block .r-footer h5 {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: .2px;
+        margin-bottom: 8px; }
+      .basket-main .r-block .r-footer img {
+        width: 100%; }
+
+@media only screen and (max-width: 1199px) {
+  .basket-main {
+    padding: 32px; } }
+
+@media only screen and (max-width: 991px) {
+  .basket-main {
+    flex-direction: column; }
+    .basket-main .l-block {
+      margin-right: 0;
+      margin-bottom: 14px;
+      width: 100%; }
+    .basket-main .r-block {
+      width: 100%; } }
+
+@media only screen and (max-width: 767px) {
+  .basket-main .l-block .l-block-wrapper .info {
+    width: 100%;
+    padding: 16px; }
+    .basket-main .l-block .l-block-wrapper .info .i-l h3 {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: .6px;
+      margin-bottom: 6px; }
+    .basket-main .l-block .l-block-wrapper .info .i-l h4 {
+      font-size: 10px;
+      line-height: 14px;
+      margin-bottom: 16px; }
+    .basket-main .l-block .l-block-wrapper .info .i-l .delete-item {
+      font-size: 12px;
+      line-height: 16px; }
+    .basket-main .l-block .l-block-wrapper .info .i-r .price {
+      font-size: 18px;
+      line-height: 28px; }
+    .basket-main .l-block .l-block-wrapper .info .i-r .counter button {
+      font-size: 20px;
+      line-height: 1; }
+    .basket-main .l-block .l-block-wrapper .info .i-r .counter span {
+      font-size: 16px;
+      line-height: 24px; }
+  .basket-main .l-block .l-block-wrapper .img {
+    padding: 28px 16px;
+    min-width: auto; } }
+
+@media only screen and (max-width: 575px) {
+  .basket-main {
+    padding: 32px 16px; }
+    .basket-main .l-block .l-block-wrapper .img {
+      width: 100px;
+      display: flex;
+      align-items: center; }
+    .basket-main .l-block .l-block-wrapper .info {
+      flex-direction: column;
+      width: calc(100% - 100px); }
+      .basket-main .l-block .l-block-wrapper .info .i-l {
+        order: 1; }
+        .basket-main .l-block .l-block-wrapper .info .i-l .delete-item {
+          margin-left: auto; }
+      .basket-main .l-block .l-block-wrapper .info .i-r {
+        order: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px; }
+        .basket-main .l-block .l-block-wrapper .info .i-r .price {
+          margin-bottom: 0;
+          margin-right: 4px; }
+        .basket-main .l-block .l-block-wrapper .info .i-r .counter span {
+          margin: 0 10px; }
+    .basket-main .r-block {
+      width: calc(100% + 32px);
+      margin-left: -16px; }
+      .basket-main .r-block .r-wrapper {
+        padding: 24px 16px; }
+        .basket-main .r-block .r-wrapper .bh-row span:first-child {
+          font-size: 24px;
+          line-height: 36px; }
+        .basket-main .r-block .r-wrapper .bh-row span:last-child {
+          font-size: 32px;
+          line-height: 40px; }
+        .basket-main .r-block .r-wrapper .ph-row span {
+          font-size: 14px;
+          line-height: 20px; }
+      .basket-main .r-block .r-footer {
+        padding: 16px; } }
+
 .regulator-support {
   padding: 56px 64px 24px; }
   .regulator-support .regulator-row {
@@ -974,6 +1180,12 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
   padding: 28px 64px;
   background-color: #EEEDF2;
   margin-top: 106px; }
+  .page-head-title .sub-b {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .6px;
+    margin-right: 8px;
+    color: #7B7B8C; }
   .page-head-title .title-breadcrumb {
     display: flex;
     align-items: center;
