@@ -1375,6 +1375,8 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
       padding: 24px 36px;
       display: flex;
       justify-content: space-between; }
+      .block-info .item .item-head.i-h-v {
+        min-height: 65%; }
       .block-info .item .item-head .left-block {
         margin-right: 10px;
         width: calc(100% - 50px); }
@@ -1384,6 +1386,14 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
           font-size: 18px;
           line-height: 24px;
           letter-spacing: .5px; }
+        .block-info .item .item-head .left-block .sub-head h4 {
+          margin-bottom: 0; }
+        .block-info .item .item-head .left-block .sub-head .t-head {
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 0.4px;
+          color: #7B7B8C;
+          margin-bottom: 4px; }
         .block-info .item .item-head .left-block .desc .links {
           display: flex; }
           .block-info .item .item-head .left-block .desc .links a {
@@ -1406,6 +1416,20 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
         justify-content: center; }
     .block-info .item .item-body {
       padding: 16px 36px 44px; }
+      .block-info .item .item-body .btn-s {
+        display: flex;
+        justify-content: space-between; }
+        .block-info .item .item-body .btn-s a {
+          font-size: 14px;
+          line-height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          letter-spacing: .2px;
+          color: #0E0E1B;
+          width: calc(50% - 4px);
+          border: 2px solid #EEEDF2;
+          height: 36px; }
       .block-info .item .item-body h4 {
         font-weight: 400;
         font-size: 16px;
@@ -1671,7 +1695,14 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
   .more-info-btn {
     padding: 0 16px 16px; }
   .block-info {
-    padding: 0 16px 32px; } }
+    padding: 0 16px 32px; }
+  .block-info .item .item-head .left-block .sub-head .t-head {
+    font-size: 12px;
+    line-height: 16px; }
+  .block-info .item .item-head .left-block .sub-head h4 {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .6px; } }
 
 .footer {
   padding: 12px 64px;

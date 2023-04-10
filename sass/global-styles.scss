@@ -633,8 +633,10 @@ button, input, .form-control, .btn {
     &.item-50 {
       width: calc(100% / 2 - 2px);
 
-      .item-body .contact .c-row span {
-        width: 170%;
+      .item-body {
+        .contact .c-row span {
+          width: 170%;
+        }
       }
     }
 
@@ -652,6 +654,10 @@ button, input, .form-control, .btn {
       display: flex;
       justify-content: space-between;
 
+      &.i-h-v {
+        min-height: 65%;
+      }
+
       .left-block {
         margin-right: 10px;
         width: calc(100% - 50px);
@@ -662,6 +668,20 @@ button, input, .form-control, .btn {
           font-size: 18px;
           line-height: 24px;
           letter-spacing: .5px;
+        }
+
+        .sub-head {
+          h4 {
+            margin-bottom: 0;
+          }
+
+          .t-head {
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.4px;
+            color: #7B7B8C;
+            margin-bottom: 4px;
+          }
         }
 
         .desc {
@@ -698,6 +718,24 @@ button, input, .form-control, .btn {
 
     .item-body {
       padding: 16px 36px 44px;
+
+      .btn-s {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+          font-size: 14px;
+          line-height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          letter-spacing: .2px;
+          color: $primary;
+          width: calc(50% - 4px);
+          border: 2px solid #EEEDF2;
+          height: 36px;
+        }
+      }
 
       h4 {
         font-weight: 400;
@@ -1152,5 +1190,18 @@ button, input, .form-control, .btn {
 
   .block-info {
     padding: 0 16px 32px;
+  }
+
+  .block-info .item .item-head .left-block .sub-head {
+    .t-head {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    h4 {
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: .6px;
+    }
   }
 }
