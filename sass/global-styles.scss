@@ -136,8 +136,24 @@ button, input, .form-control, .btn {
   padding: 56px 64px;
 
   &.shop-bottom {
-    padding-bottom: 0;
+    padding-bottom: 15px;
     padding-top: 24px;
+
+    .read-more {
+      margin-top: 0;
+
+      .status {
+        pointer-events: none;
+      }
+    }
+
+    .shop-items {
+      margin-bottom: 24px;
+
+      &.passive {
+        display: none;
+      }
+    }
   }
 
   &.alone {

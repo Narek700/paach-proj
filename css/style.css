@@ -1227,8 +1227,16 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
 .internet-shop {
   padding: 56px 64px; }
   .internet-shop.shop-bottom {
-    padding-bottom: 0;
+    padding-bottom: 15px;
     padding-top: 24px; }
+    .internet-shop.shop-bottom .read-more {
+      margin-top: 0; }
+      .internet-shop.shop-bottom .read-more .status {
+        pointer-events: none; }
+    .internet-shop.shop-bottom .shop-items {
+      margin-bottom: 24px; }
+      .internet-shop.shop-bottom .shop-items.passive {
+        display: none; }
   .internet-shop.alone {
     padding-bottom: 16px;
     padding-top: 16px; }
